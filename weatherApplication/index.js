@@ -1,6 +1,6 @@
 //fetch url and show sample data
     //
-    // let URL = ('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=47e77e0353a9da6a082986301c3e0593');
+    // let URL = ('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid= myKey');
     // fetch(URL)
     // .then(res=>res.json())
     // .then(result =>{
