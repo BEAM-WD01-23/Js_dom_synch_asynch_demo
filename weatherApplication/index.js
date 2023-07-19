@@ -30,13 +30,15 @@
         if(insertCityName.length === ''){
             alert('please insert name of the city!')
         }else{//chage the url to allow users insert city ...
-            const myKey = `47e77e0353a9da6a082986301c3e0593`;
+            const myKey = 'secret key';
             const URL = `https://api.openweathermap.org/data/2.5/weather?q=${insertCityName}&appid=${myKey}&units=metric`
             console.log(URL);
             fetch(URL)
             .then(res=>res.json())
             .then(result =>{
-                console.log(result);
+               // console.log(result);
+           
+               //
                 const Icon = document.getElementById('icon');
                 const Humidity = document.getElementById('humidity');
                 const Country = document.getElementById('country');
@@ -54,6 +56,8 @@
                 Wind.innerHTML = 'Wind Speed: ' + result.wind.speed + 'kph';
                 HighTemp.innerHTML = 'Max-Temp: ' + result.main.temp_max + 'ºC';
                 FeelsLike.innerHTML = 'Feels-Like: ' + result.main.feels_like + 'ºC';
+                //
+              
 
             })
         }
